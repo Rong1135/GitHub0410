@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>這是第二頁</title>
+    </head>
+    <body>
+        <nav>
+            <a href="#Git">Git</a>
+        </nav>
+        <main>
+            <section id="#Git">
+                <h1>Git basic operations</h1>
+                <hr>
+                <h2>如何建立 Git Local Repository(本端數據庫)</h2>
+                
+                <div>
+                    <h3>新建數據庫</h3>
+                    <ol>
+                        <li>首先建立一個新專案的資料夾</li>
+                        <li>開啟Git Bash，並使用 cd 前往資料夾</li>
+                        <li>
+                            執行 git init 指令建立本地數據庫
+                            <ol>
+                                <li>若執行成功，資料夾內會出現一個隱藏的 .git 資料夾</li>
+                            </ol>
+                        </li>
+                    </ol>
+                </div>
+                
+                <div>
+                    <h3>版本控制流程</h3>
+                    <ol>
+                        <li>使用 git init，成功建立數據庫</li>
+                        <li>新增一個 index.html 檔案</li>
+                        <li>
+                            使用 git status 指令查看狀態
+                            <ol>
+                                <li>Untracked file 代表偵測到有新增檔案，但 Git 並未追蹤</li>
+                                <li>Changes to be committed 表示檔案有成功被加到索引</li>
+                            </ol>
+                        </li>
+                        <li>將檔案加入到索引(staging area): 指令 git add &lt;檔案名稱&gt;</li>
+                        <li>一次全加入則使用 git add .</li>
+
+                        <li>提交新版本: git commit -m "&lt;填寫版本資訊&gt;"</li>
+
+                        <li>git log : 查詢版本</li>
+                    </ol>
+                </div>
+                
+            </section>
+        </main>
+        
+        <ol>
+            <li>開新資料夾，git init 建立數據庫</li>
+            <li>新增一個 index.html 檔案</li>
+            <li>
+                <ul>
+                    <li>單一檔案加入索引: git add 檔案名稱(檔案名稱有加大於小於)</li>
+                    <li>所有檔案加入索引: git add .</li>
+                </ul>
+            </li>
+            <li>提交版本: git commit -m "新增網頁"</li>
+            <li>觀看歷史紀錄: git log</li>
+        </ol>
+        <h2>Sourcetree </h2>
+    </body>
+</html>
